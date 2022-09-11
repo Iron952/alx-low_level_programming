@@ -1,33 +1,35 @@
 #include <stdio.h>
-#include <stdlib.h>
 /**
- * main - main block
- * Description: prints all single digit numbers of base 10
- * starting from 0, followed by a new line.
+ * main - prints out all the numbers between 00 and 99
+ * with no two digits being the same
  * Return: 0
  */
 int main(void)
 {
-	int c;
-	int d = 0;
+	int i, j;
 
-	while (d < 10)
+	for (i = 48; i < 58; i++)
 	{
-		c = 0;
-		while (c < 10)
+		for (j = i; j < 58; j++)
 		{
+			if (i == j)
+			{
+				continue;
+			}
 
-			putchar('0' + d);
-			putchar('0' + c);
+			putchar(i);
+			putchar(j);
 
-			if (c + d != 18)
+			if (i == 56 && j == 57)
+			{
+				break;
+			}
+			else
 			{
 				putchar(',');
 				putchar(' ');
 			}
-			c++;
 		}
-		d++;
 	}
 	putchar('\n');
 	return (0);
