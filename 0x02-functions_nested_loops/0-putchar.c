@@ -1,4 +1,5 @@
- #include "main.h"
+int putcher (int c)
+#include "main.h"
 #include <unistd.h>
 
 /**
