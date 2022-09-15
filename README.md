@@ -1,1 +1,1 @@
-# C - Hello, World
+prototypes of all your functions
