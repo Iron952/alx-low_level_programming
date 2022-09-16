@@ -8,7 +8,6 @@
 int _isupper(int c)
 {
 if ((c >= 'A') && (c <= 'Z'))
-int_isupper("int c \n")
 return (1);
 
 return (0);
